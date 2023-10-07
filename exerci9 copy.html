@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<script>
+ 
+let nomeVinhoMaisCaro = "";
+let precoVinhoMaisCaro = -1;
+let tipoVinhoMaisCaro = "";
+
+while (true) {
+    let nome = prompt("Digite o nome do vinho (ou 'fim' para encerrar):");
+
+    if (nome.toLowerCase() === "fim") {
+        break;
+    }
+
+    let preco = parseFloat(prompt("Digite o preço do vinho:"));
+    let tipo = prompt("Digite o tipo do vinho (T para tinto, B para branco, R para rosê):");
+
+    if (preco > precoVinhoMaisCaro) {
+        nomeVinhoMaisCaro = nome;
+        precoVinhoMaisCaro = preco;
+        tipoVinhoMaisCaro = tipo;
+    }
+}
+
+if (nomeVinhoMaisCaro !== "") {
+    alert(`O vinho mais caro é '${nomeVinhoMaisCaro}' com preço de R$ ${precoVinhoMaisCaro.toFixed(2)} e é do tipo '${tipoVinhoMaisCaro}'.`);
+} else {
+    ALERT("Nenhum vinho foi inserido.");
+}
+ 
+</script>
+</head>
+<body>
+  
+</body>
+</html>

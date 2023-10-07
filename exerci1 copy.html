@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<script>
+
+
+let numero = parseFloat(prompt("Digite um número:"));
+
+
+let A;
+let B;
+
+
+if (numero > 0) {
+    A = numero;
+    B = undefined; 
+} else if (numero < 0) {
+    A = undefined; 
+    B = numero;
+} else {
+    A = undefined;
+    B = undefined; 
+}
+
+
+if (A !== undefined) {
+    alert("Você digitou um número positivo e foi armazenado na variável A: " + A);
+} else if (B !== undefined) {
+    alert("Você digitou um número negativo e foi armazenado na variável B: " + B);
+} else {
+    alert("Você digitou zero.");
+}
+
+
+</script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<script>
+  let seupeso = +prompt("Qual seu peso?");
+    let suaaltura = +prompt("Qual sua altura?");
+    let imc = seupeso / (  suaaltura  *  suaaltura );
+    alert(" Seu imc é de  " +  imc + " kg/m2");
+
+    if (imc < 18.5) {
+      alert("Abaixo do peso");
+      } else if (imc >= 18.5 && imc < 25) {
+      alert("Peso normal");
+      } else if (imc >= 25 && imc < 30) {
+      alert("Acima do peso");
+      } else if (imc >= 30 && imc < 40) {
+      alert("Obesidade");
+      } else {
+      alert("Obesidade mórbida");
+      }
+
+</script>
+</head>
+<body>
+  
+</body>
+</html>

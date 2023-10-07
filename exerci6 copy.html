@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      let valor1 = parseInt(prompt("Digite o primeiro valor inteiro:"));
+      let valor2 = parseInt(prompt("Digite o segundo valor inteiro:"));
+
+     
+      let soma = valor1 + valor2;
+      let subtracao = valor1 - valor2;
+      let multiplicacao = valor1 * valor2;
+
+      
+      let divisao = "Divisão não é possível.";
+      if (valor2 !== 0) {
+        divisao = valor1 / valor2;
+      }
+
+     
+      alert(
+        "Resultados das operações:\n\n" +
+          "Soma: " +
+          soma +
+          "\n" +
+          "Subtração: " +
+          subtracao +
+          "\n" +
+          "Multiplicação: " +
+          multiplicacao +
+          "\n" +
+          "Divisão: " +
+          divisao
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

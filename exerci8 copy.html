@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<script>
+ 
+let consumoKWh = parseFloat(prompt("Digite o consumo de energia em KWh:"));
+
+
+let  valorPorKWh;
+
+if (consumoKWh <= 300) {
+    valorPorKWh = 1.25;
+} else if (consumoKWh <= 600) {
+    valorPorKWh = 1.50;
+} else if (consumoKWh <= 1000) {
+    valorPorKWh = 1.75;
+} else {
+    valorPorKWh = 2.00;
+}
+
+
+let valorConta = consumoKWh * valorPorKWh;
+
+
+alert("O valor da conta de energia elétrica é: R$ " + valorConta.toFixed(2));
+
+</script>
+</head>
+<body>
+  
+</body>
+</html>
